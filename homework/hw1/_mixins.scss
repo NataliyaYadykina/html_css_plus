@@ -1,0 +1,18 @@
+@mixin flexCenterGap($gap) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin fontParams($size, $weight, $lineHeigth) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeigth;
+}
+
+@mixin flexColumnCenterCenter() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

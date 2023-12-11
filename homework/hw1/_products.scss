@@ -1,0 +1,151 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 95px;
+    padding-top: 30px;
+
+    &__filters {
+        margin-top: 20px;
+        margin-bottom: 64px;
+        display: flex;
+        gap: 320px;
+
+        &__right {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        &__title {
+            color: #000;
+            @include fontParams(14px, 600, normal);
+            text-transform: uppercase;
+        }
+
+        &__left {
+            display: flex;
+            gap: 28px;
+        }
+
+        &__left__item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: #6F6E6E;
+            @include fontParams(14px, 400, normal);
+        }
+    }
+
+
+
+    &__title {
+        @include fontParams(30px, 400, 36px);
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        @include fontParams(14px, 400, 17px);
+        text-align: center;
+        color: #9F9F9F;
+        margin-bottom: 48px;
+    }
+
+    &__items-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+
+        &__img_wrap {
+            position: relative;
+            display: flex;
+        }
+
+        &__hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            background: rgba(58, 56, 56, 0.86);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+        &:hover .products__item__hover {
+            height: 100%;
+            opacity: 1;
+        }
+
+        &__text-wrap {
+            padding: 24px;
+            background-color: #F8F8F8;
+        }
+
+        &__title {
+            @include fontParams(13px, 400, 16px);
+            color: #000;
+            margin-bottom: 16px;
+        }
+
+        &__desc {
+            @include fontParams(14px, 300, 17px);
+            color: #5D5D5D;
+            margin-bottom: 16px;
+        }
+
+        &__price {
+            @include fontParams(16px, 400, 19px);
+            color: $colorPink;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 15px 40px;
+        border: 1px solid $colorPink;
+        color: $colorPink;
+        @include fontParams(16px, 400, 19px);
+        transition: all .3s;
+    }
+
+    &__button:hover {
+        background-color: $colorPink;
+        color: $colorWhite;
+    }
+}
+
+.add_to_cart_button {
+    padding: 10px 15px;
+    border: 1px solid $colorWhite;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: $colorWhite;
+    transition: all .3s;
+}
+
+.add_to_cart_button:hover {
+    border-color: $colorPink;
+    color: $colorPink;
+}
+
+.add_to_cart_button path {
+    transition: fill .3s;
+}
+
+.add_to_cart_button:hover path {
+    fill: $colorPink;
+}

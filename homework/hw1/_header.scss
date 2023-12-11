@@ -1,0 +1,22 @@
+.header {
+    background: $colorBase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        @include flexCenterGap(40px);
+    }
+
+    &__right {
+        @include flexCenterGap(33px);
+    }
+
+    & svg:hover path {
+        fill: $colorPink;
+    }
+}
