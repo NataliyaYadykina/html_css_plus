@@ -1,0 +1,51 @@
+.header {
+    background: $colorBase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        @include flexCenterGap(40px);
+    }
+
+    &__right {
+        @include flexCenterGap(33px);
+        position: relative;
+
+        & label {
+            display: flex;
+        }
+    }
+
+    & svg:hover path {
+        fill: $colorPink;
+    }
+}
+
+#burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.nav {
+        height: 0;
+        padding: 0 32px;
+    }
+}
+
+.nav {
+    background-color: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: $widthBurgerMenu;
+    box-sizing: border-box;
+    position: absolute;
+    top: 58px;
+    height: auto;
+    padding: 32px;
+    overflow: hidden;
+    transition: all .3s;
+}

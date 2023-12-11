@@ -1,0 +1,36 @@
+%breadcrumbs_sep {
+    color: #636363;
+    @include fontParams(14px, 300, normal);
+}
+
+.breadcrumbs {
+    background: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        color: $colorPink;
+        @include fontParams(24px, 400, normal);
+    }
+
+
+
+    &__links {
+        @extend %breadcrumbs_sep;
+    }
+
+    &__link {
+        @extend %breadcrumbs_sep;
+
+        &-current {
+            color: #F16D7F;
+            font-weight: 700;
+        }
+    }
+}
