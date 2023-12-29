@@ -1,0 +1,39 @@
+.footer {
+    background-color: $colorBase;
+    padding: 24px 0;
+    @include fontParams(16px, 400, 19px);
+    color: #FBFBFB;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-right {
+            display: flex;
+            gap: 7px;
+        }
+
+        &-right_icon {
+            background: $colorWhite;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color .3s;
+        }
+
+        &-right_icon:hover {
+            background-color: $colorPink;
+        }
+
+        &-right_icon path {
+            transition: fill .3s;
+        }
+
+        &-right_icon:hover path {
+            fill: $colorWhite;
+        }
+    }
+}
