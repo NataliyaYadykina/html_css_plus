@@ -572,18 +572,18 @@ body {
   justify-content: space-between;
   gap: 128px;
 }
-.reg__form {
+.reg_form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.reg__form__title {
+.reg_form__title {
   color: #222;
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
 }
-.reg__form__sex {
+.reg_form__sex {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -593,44 +593,44 @@ body {
   line-height: normal;
   position: relative;
 }
-.reg__form__sex__item {
+.reg_form__sex__item {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.reg__form input {
+.reg_form input {
   width: 360px;
   padding: 15px 17px;
   border: 1px solid #A4A4A4;
 }
-.reg__form input[type=radio] {
+.reg_form input[type=radio] {
   width: 17px;
   height: 17px;
 }
-.reg__form input::-webkit-input-placeholder {
+.reg_form input::-webkit-input-placeholder {
   color: #B1B1B1;
   font-size: 13px;
   font-weight: 300;
   line-height: normal;
 }
-.reg__form input:-moz-placeholder {
+.reg_form input:-moz-placeholder {
   color: #B1B1B1;
   font-size: 13px;
   font-weight: 300;
   line-height: normal;
 }
-.reg__form input[type=radio]:checked, .reg__form input[type=radio]:not(:checked) {
+.reg_form input[type=radio]:checked, .reg_form input[type=radio]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
-.reg__form input[type=radio]:checked + label, .reg__form input[type=radio]:not(:checked) + label {
+.reg_form input[type=radio]:checked + label, .reg_form input[type=radio]:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 20px;
   line-height: 20px;
   cursor: pointer;
 }
-.reg__form input[type=radio]:checked + label:before, .reg__form input[type=radio]:not(:checked) + label:before {
+.reg_form input[type=radio]:checked + label:before, .reg_form input[type=radio]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0px;
@@ -640,15 +640,15 @@ body {
   border: 1px solid #A4A4A4;
   background-color: #ffffff;
 }
-.reg__form input[type=radio]:checked + label:before, .reg__form input[type=radio]:not(:checked) + label:before {
+.reg_form input[type=radio]:checked + label:before, .reg_form input[type=radio]:not(:checked) + label:before {
   border-radius: 100%;
 }
-.reg__form input[type=radio]:checked + label:after, .reg__form input[type=radio]:not(:checked) + label:after {
+.reg_form input[type=radio]:checked + label:after, .reg_form input[type=radio]:not(:checked) + label:after {
   content: "";
   position: absolute;
   transition: all 0.2s ease;
 }
-.reg__form input[type=radio]:checked + label:after, .reg__form input[type=radio]:not(:checked) + label:after {
+.reg_form input[type=radio]:checked + label:after, .reg_form input[type=radio]:not(:checked) + label:after {
   left: 3px;
   top: -7px;
   width: 13px;
@@ -656,13 +656,13 @@ body {
   border-radius: 100%;
   background-color: #F16D7F;
 }
-.reg__form input[type=radio]:not(:checked) + label:after {
+.reg_form input[type=radio]:not(:checked) + label:after {
   opacity: 0;
 }
-.reg__form input[type=radio]:checked + label:after {
+.reg_form input[type=radio]:checked + label:after {
   opacity: 1;
 }
-.reg__form__text {
+.reg_form__text {
   color: #B1B1B1;
   font-size: 13px;
   font-weight: 300;
@@ -670,7 +670,7 @@ body {
   margin-top: -5px;
   margin-bottom: 20px;
 }
-.reg__form__btn {
+.reg_form__btn {
   background: #F16D7F;
   color: #fff;
   font-size: 14px;
@@ -686,17 +686,17 @@ body {
   transition: all 0.3s;
   border: 1px solid #F16D7F;
 }
-.reg__form__btn:hover {
+.reg_form__btn:hover {
   background-color: #fff;
   color: #F16D7F;
 }
-.reg__form__btn path {
+.reg_form__btn path {
   transition: all 0.3s;
 }
-.reg__form__btn:hover path {
+.reg_form__btn:hover path {
   fill: #F16D7F;
 }
-.reg__text {
+.reg_text {
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
@@ -704,11 +704,11 @@ body {
   flex-direction: column;
   gap: 16px;
 }
-.reg__text__title {
+.reg_text__title {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-.reg__text__p {
+.reg_text__p {
   display: flex;
   gap: 20px;
   align-items: center;

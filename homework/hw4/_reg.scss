@@ -5,7 +5,7 @@
     justify-content: space-between;
     gap: 128px;
 
-    &__form {
+    &_form {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -147,7 +147,7 @@
         }
     }
 
-    &__text {
+    &_text {
         @include fontParams(24px, 300, normal);
         display: flex;
         flex-direction: column;
