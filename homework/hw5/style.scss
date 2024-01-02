@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import 'vars';
+@import 'mixins';
+@import 'base';
+@import 'header';
+@import 'breadcrumbs';
+@import 'index';
+@import 'product_page';
+@import 'cart';
+@import 'reg';
+@import 'products';
+@import 'feature';
+@import 'subscribe';
+@import 'footer';
+@import 'media1200';
+@import 'media1024';
+@import 'media768';
+
+
+@media (max-width: 400px) {
+
+    .center {
+        padding-left: calc(50% - 150px);
+        padding-right: calc(50% - 150px);
+    }
+
+    .offer {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    .products__item {
+        width: 300px;
+    }
+
+    .feature__content__item {
+        width: 300px;
+    }
+
+    .subscribe__content-left {
+        width: 300px;
+    }
+
+}

@@ -1,0 +1,167 @@
+.reg {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__title {
+            color: #222;
+            @include fontParams(16px, 300, normal);
+        }
+
+        &__sex {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            gap: 20px;
+            @include fontParams(11px, 300, normal);
+            position: relative;
+
+            &__item {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+
+        & input {
+            width: 360px;
+            padding: 15px 17px;
+            border: 1px solid #A4A4A4;
+        }
+
+        & input[type=radio] {
+            width: 17px;
+            height: 17px;
+        }
+
+        & input::-webkit-input-placeholder {
+            color: #B1B1B1;
+            @include fontParams(13px, 300, normal);
+        }
+
+        & input:-moz-placeholder {
+            color: #B1B1B1;
+            @include fontParams(13px, 300, normal);
+        }
+
+        & input[type=radio]:checked,
+        & input[type=radio]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+
+        & input[type=radio]:checked+label,
+        & input[type=radio]:not(:checked)+label {
+            display: inline-block;
+            position: relative;
+            padding-left: 20px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        & input[type=radio]:checked+label:before,
+        & input[type=radio]:not(:checked)+label:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: -10px;
+            width: 17px;
+            height: 17px;
+            border: 1px solid #A4A4A4;
+            background-color: #ffffff;
+        }
+
+        & input[type=radio]:checked+label:before,
+        & input[type=radio]:not(:checked)+label:before {
+            border-radius: 100%;
+        }
+
+        & input[type="radio"]:checked+label:after,
+        & input[type="radio"]:not(:checked)+label:after {
+            content: "";
+            position: absolute;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        & input[type="radio"]:checked+label:after,
+        & input[type="radio"]:not(:checked)+label:after {
+            left: 3px;
+            top: -7px;
+            width: 13px;
+            height: 13px;
+            border-radius: 100%;
+            background-color: $colorPink;
+        }
+
+        & input[type="radio"]:not(:checked)+label:after {
+            opacity: 0;
+        }
+
+        & input[type="radio"]:checked+label:after {
+            opacity: 1;
+        }
+
+        &__text {
+            color: #B1B1B1;
+            @include fontParams(13px, 300, normal);
+            margin-top: -5px;
+            margin-bottom: 20px;
+        }
+
+        &__btn {
+            background: $colorPink;
+            color: $colorWhite;
+            @include fontParams(14px, 400, normal);
+            text-transform: uppercase;
+            white-space: nowrap;
+            width: 167px;
+            padding: 17px 30px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            transition: all .3s;
+            border: 1px solid $colorPink;
+
+            &:hover {
+                background-color: $colorWhite;
+                color: $colorPink;
+            }
+
+            & path {
+                transition: all .3s;
+            }
+
+            &:hover path {
+                fill: $colorPink;
+            }
+        }
+    }
+
+    &_text {
+        @include fontParams(24px, 300, normal);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &__title {
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        &__p {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+}

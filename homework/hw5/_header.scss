@@ -1,0 +1,71 @@
+.header {
+    background: $colorBase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        @include flexCenterGap(40px);
+    }
+
+    &__right {
+        @include flexCenterGap(33px);
+        position: relative;
+
+        & label {
+            display: flex;
+        }
+    }
+
+    & svg:hover path {
+        fill: $colorPink;
+    }
+}
+
+#burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.nav {
+        height: 0;
+        padding: 0 32px;
+    }
+}
+
+.nav {
+    background-color: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: $widthBurgerMenu;
+    box-sizing: border-box;
+    position: absolute;
+    top: 58px;
+    height: auto;
+    padding: 32px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.cart_icon {
+    position: relative;
+}
+
+.cart_icon::after {
+    content: "5";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: $colorPink;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colorWhite;
+    @include fontParams(12px, 400, normal);
+}

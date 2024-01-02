@@ -1,0 +1,69 @@
+.subscribe {
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(img/subscribe_bg.jpg);
+    background-size: cover;
+    padding-top: 97px;
+    padding-bottom: 126px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-left {
+            width: 360px;
+            @include flexColumnCenterCenter();
+        }
+
+        &-left__img {
+            max-width: 96px;
+            margin-bottom: 30px;
+        }
+
+        &-left__reply {
+            text-align: center;
+            @include fontParams(20px, 400, 24px);
+        }
+
+        &-left__reply span {
+            font-style: italic;
+        }
+
+        &-right {
+            @include flexColumnCenterCenter();
+        }
+
+        &-right__title {
+            @include fontParams(24px, 700, 40px);
+        }
+
+        &-right__subtitle {
+            @include fontParams(18px, 400, 30px);
+            margin-bottom: 32px;
+        }
+
+        &-right__form {
+            display: flex;
+        }
+
+        &-right__form-input {
+            border: none;
+            width: 256px;
+            height: 49px;
+            background-color: #E1E1E1;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+        &-right__form-button {
+            border: none;
+            width: 100px;
+            height: 49px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: #F16D7F;
+            color: #fff;
+        }
+    }
+}
