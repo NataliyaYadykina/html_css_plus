@@ -1,0 +1,252 @@
+@keyframes bulb_blink_1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_5 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_6 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_7 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_8 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_9 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_10 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_11 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_12 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_die {
+  0% {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 0;
+    display: none;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  counter-reset: bulb_counter;
+}
+
+.game {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bulb {
+  position: absolute;
+}
+.bulb__check {
+  position: absolute;
+  visibility: hidden;
+  left: -9999999px;
+}
+.bulb__check:checked {
+  counter-increment: bulb_counter;
+}
+.bulb__check:checked ~ label {
+  display: inline-block;
+  animation: bulb_die 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+.bulb__img {
+  width: 60px;
+}
+.bulb_1 {
+  left: 20vw;
+  top: 63vh;
+  animation: bulb_blink_1 3s ease-in-out 2s both;
+}
+.bulb_2 {
+  left: 17vw;
+  top: 21vh;
+  animation: bulb_blink_2 3s ease-in-out 4s both;
+}
+.bulb_3 {
+  left: 42vw;
+  top: 17vh;
+  animation: bulb_blink_3 3s ease-in-out 6s both;
+}
+.bulb_4 {
+  left: 56vw;
+  top: 19vh;
+  animation: bulb_blink_4 3s ease-in-out 8s both;
+}
+.bulb_5 {
+  left: 28vw;
+  top: 63vh;
+  animation: bulb_blink_5 3s ease-in-out 10s both;
+}
+.bulb_6 {
+  left: 32vw;
+  top: 6vh;
+  animation: bulb_blink_6 3s ease-in-out 12s both;
+}
+.bulb_7 {
+  left: 51vw;
+  top: 48vh;
+  animation: bulb_blink_7 3s ease-in-out 14s both;
+}
+.bulb_8 {
+  left: 32vw;
+  top: 46vh;
+  animation: bulb_blink_8 3s ease-in-out 16s both;
+}
+.bulb_9 {
+  left: 44vw;
+  top: 9vh;
+  animation: bulb_blink_9 3s ease-in-out 18s both;
+}
+.bulb_10 {
+  left: 1vw;
+  top: 26vh;
+  animation: bulb_blink_10 3s ease-in-out 20s both;
+}
+.bulb_11 {
+  left: 39vw;
+  top: 18vh;
+  animation: bulb_blink_11 3s ease-in-out 22s both;
+}
+.bulb_12 {
+  left: 35vw;
+  top: 11vh;
+  animation: bulb_blink_12 3s ease-in-out 24s both;
+}
+
+.counter_info {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 60px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 100%;
+  border: 5px solid orange;
+}
+.counter_info::before {
+  content: counter(bulb_counter);
+}/*# sourceMappingURL=style.css.map */

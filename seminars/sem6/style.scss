@@ -1,0 +1,97 @@
+$widthBulb: 60px;
+$countBulbs: 12;
+
+@for $i from 1 through $countBulbs {
+
+    @keyframes bulb_blink_#{$i} {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+@keyframes bulb_die {
+    0% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        opacity: 0;
+        display: none;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    counter-reset: bulb_counter;
+}
+
+.game {
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bulb {
+    position: absolute;
+
+    &__check {
+        position: absolute;
+        visibility: hidden;
+        left: -9999999px;
+
+        &:checked {
+            counter-increment: bulb_counter;
+
+            &~label {
+                display: inline-block;
+                animation: bulb_die 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }
+        }
+    }
+
+    &__img {
+        width: $widthBulb;
+    }
+
+    @for $i from 1 through $countBulbs {
+        &_#{$i} {
+            left: random(60)+vw;
+            top: random(80)+vh;
+            animation: bulb_blink_#{$i} 3s ease-in-out #{$i*2}s both;
+        }
+    }
+}
+
+.counter_info {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 60px;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 100%;
+    border: 5px solid orange;
+
+    &::before {
+        content: counter(bulb_counter);
+    }
+}
