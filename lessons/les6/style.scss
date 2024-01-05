@@ -76,7 +76,7 @@ $countDucks: 10;
 
     @for $i from 1 through $countDucks {
         &_#{$i} {
-            animation: duck_fly_#{$i} 25s ease-in #{$i*2}s both;
+            animation: duck_fly_#{$i} 10s ease-in #{$i*2}s both;
         }
     }
 }

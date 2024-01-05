@@ -130,6 +130,39 @@
     opacity: 0;
   }
 }
+@keyframes bulb_blink_13 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_14 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bulb_blink_15 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes bulb_die {
   0% {
     transform: rotateY(360deg);
@@ -177,64 +210,79 @@
   width: 60px;
 }
 .bulb_1 {
-  left: 20vw;
-  top: 63vh;
+  left: 5vw;
+  top: 39vh;
   animation: bulb_blink_1 3s ease-in-out 2s both;
 }
 .bulb_2 {
-  left: 17vw;
-  top: 21vh;
+  left: 28vw;
+  top: 80vh;
   animation: bulb_blink_2 3s ease-in-out 4s both;
 }
 .bulb_3 {
-  left: 42vw;
-  top: 17vh;
+  left: 10vw;
+  top: 49vh;
   animation: bulb_blink_3 3s ease-in-out 6s both;
 }
 .bulb_4 {
-  left: 56vw;
-  top: 19vh;
+  left: 54vw;
+  top: 63vh;
   animation: bulb_blink_4 3s ease-in-out 8s both;
 }
 .bulb_5 {
-  left: 28vw;
-  top: 63vh;
+  left: 57vw;
+  top: 50vh;
   animation: bulb_blink_5 3s ease-in-out 10s both;
 }
 .bulb_6 {
-  left: 32vw;
-  top: 6vh;
+  left: 60vw;
+  top: 79vh;
   animation: bulb_blink_6 3s ease-in-out 12s both;
 }
 .bulb_7 {
-  left: 51vw;
-  top: 48vh;
+  left: 7vw;
+  top: 23vh;
   animation: bulb_blink_7 3s ease-in-out 14s both;
 }
 .bulb_8 {
-  left: 32vw;
-  top: 46vh;
+  left: 26vw;
+  top: 27vh;
   animation: bulb_blink_8 3s ease-in-out 16s both;
 }
 .bulb_9 {
-  left: 44vw;
-  top: 9vh;
+  left: 38vw;
+  top: 60vh;
   animation: bulb_blink_9 3s ease-in-out 18s both;
 }
 .bulb_10 {
-  left: 1vw;
-  top: 26vh;
+  left: 41vw;
+  top: 30vh;
   animation: bulb_blink_10 3s ease-in-out 20s both;
 }
 .bulb_11 {
-  left: 39vw;
-  top: 18vh;
+  left: 17vw;
+  top: 16vh;
   animation: bulb_blink_11 3s ease-in-out 22s both;
 }
 .bulb_12 {
   left: 35vw;
-  top: 11vh;
+  top: 32vh;
   animation: bulb_blink_12 3s ease-in-out 24s both;
+}
+.bulb_13 {
+  left: 16vw;
+  top: 24vh;
+  animation: bulb_blink_13 3s ease-in-out 26s both;
+}
+.bulb_14 {
+  left: 24vw;
+  top: 74vh;
+  animation: bulb_blink_14 3s ease-in-out 28s both;
+}
+.bulb_15 {
+  left: 9vw;
+  top: 75vh;
+  animation: bulb_blink_15 3s ease-in-out 30s both;
 }
 
 .counter_info {
