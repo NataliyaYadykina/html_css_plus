@@ -1,0 +1,98 @@
+$widthDuck: 100px;
+$countDucks: 10;
+
+@for $i from 1 through $countDucks {
+
+    @keyframes duck_fly_#{$i} {
+        0% {
+            left: -$widthDuck;
+            top: random(80)+vh;
+        }
+
+        50% {
+            left: random(60)+vw;
+            top: random(80)+vh;
+        }
+
+        100% {
+            left: 100vw;
+            top: random(80)+vh;
+        }
+    }
+}
+
+@keyframes duck_die {
+    0% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    counter-reset: count;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/lake.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.duck {
+    position: absolute;
+
+    &__check {
+        position: absolute;
+        visibility: hidden;
+        left: -9999999px;
+
+        &:checked {
+            counter-increment: count;
+
+            &~label {
+                display: inline-block;
+                animation: duck_die 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            }
+        }
+    }
+
+    &__img {
+        width: $widthDuck;
+        transform: rotateY(180deg);
+    }
+
+    @for $i from 1 through $countDucks {
+        &_#{$i} {
+            animation: duck_fly_#{$i} 25s ease-in #{$i*2}s both;
+        }
+    }
+}
+
+.counter_info {
+    position: absolute;
+    top: 5vh;
+    right: 50vw;
+    font-size: 60px;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 100%;
+    border: 5px solid blue;
+    opacity: 0.8;
+
+    &::before {
+        content: counter(count);
+    }
+}
