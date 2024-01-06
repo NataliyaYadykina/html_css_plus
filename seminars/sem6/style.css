@@ -210,78 +210,78 @@
   width: 60px;
 }
 .bulb_1 {
-  left: 5vw;
-  top: 39vh;
+  left: 45vw;
+  top: 79vh;
   animation: bulb_blink_1 3s ease-in-out 2s both;
 }
 .bulb_2 {
-  left: 28vw;
-  top: 80vh;
+  left: 49vw;
+  top: 34vh;
   animation: bulb_blink_2 3s ease-in-out 4s both;
 }
 .bulb_3 {
-  left: 10vw;
-  top: 49vh;
+  left: 18vw;
+  top: 73vh;
   animation: bulb_blink_3 3s ease-in-out 6s both;
 }
 .bulb_4 {
-  left: 54vw;
-  top: 63vh;
+  left: 59vw;
+  top: 32vh;
   animation: bulb_blink_4 3s ease-in-out 8s both;
 }
 .bulb_5 {
-  left: 57vw;
-  top: 50vh;
+  left: 60vw;
+  top: 72vh;
   animation: bulb_blink_5 3s ease-in-out 10s both;
 }
 .bulb_6 {
-  left: 60vw;
-  top: 79vh;
+  left: 12vw;
+  top: 61vh;
   animation: bulb_blink_6 3s ease-in-out 12s both;
 }
 .bulb_7 {
-  left: 7vw;
-  top: 23vh;
+  left: 37vw;
+  top: 55vh;
   animation: bulb_blink_7 3s ease-in-out 14s both;
 }
 .bulb_8 {
-  left: 26vw;
-  top: 27vh;
+  left: 10vw;
+  top: 13vh;
   animation: bulb_blink_8 3s ease-in-out 16s both;
 }
 .bulb_9 {
-  left: 38vw;
-  top: 60vh;
+  left: 9vw;
+  top: 37vh;
   animation: bulb_blink_9 3s ease-in-out 18s both;
 }
 .bulb_10 {
-  left: 41vw;
-  top: 30vh;
+  left: 46vw;
+  top: 7vh;
   animation: bulb_blink_10 3s ease-in-out 20s both;
 }
 .bulb_11 {
-  left: 17vw;
-  top: 16vh;
+  left: 55vw;
+  top: 53vh;
   animation: bulb_blink_11 3s ease-in-out 22s both;
 }
 .bulb_12 {
-  left: 35vw;
-  top: 32vh;
+  left: 19vw;
+  top: 50vh;
   animation: bulb_blink_12 3s ease-in-out 24s both;
 }
 .bulb_13 {
-  left: 16vw;
-  top: 24vh;
+  left: 58vw;
+  top: 33vh;
   animation: bulb_blink_13 3s ease-in-out 26s both;
 }
 .bulb_14 {
-  left: 24vw;
-  top: 74vh;
+  left: 26vw;
+  top: 53vh;
   animation: bulb_blink_14 3s ease-in-out 28s both;
 }
 .bulb_15 {
-  left: 9vw;
-  top: 75vh;
+  left: 52vw;
+  top: 80vh;
   animation: bulb_blink_15 3s ease-in-out 30s both;
 }
 

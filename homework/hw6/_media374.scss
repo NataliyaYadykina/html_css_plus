@@ -1,0 +1,101 @@
+@media (max-width: 374px) {
+
+    .center {
+        padding-left: calc(50% - 150px);
+        padding-right: calc(50% - 150px);
+    }
+
+    .offer {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    .products {
+        &__filters {
+            gap: 5px;
+        }
+
+        &__filter[open] {
+            width: 300px;
+            padding-left: 10px;
+        }
+
+        &__filter__summary svg {
+            width: 17px;
+        }
+
+        &__item {
+            width: 300px;
+        }
+    }
+
+    .description {
+        &__text {
+            width: 300px;
+        }
+
+        &__filters {
+            gap: 15px;
+
+            &__item summary {
+                align-items: baseline;
+            }
+        }
+    }
+
+    .cart {
+        &__product_card {
+            width: 300px;
+            flex-direction: column;
+
+            &__img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            &__info {
+                padding-right: 17px;
+            }
+        }
+
+
+
+        &__buttons {
+            flex-direction: column;
+        }
+
+        &__address {
+            width: 300px;
+        }
+
+        &__amount_card {
+            padding: 30px 30px;
+
+            &__total {
+                font-size: 14px;
+            }
+
+            &__line {
+                width: 240px;
+            }
+
+            &__button {
+                padding: 15px 35px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .reg_form input {
+        width: 300px;
+    }
+
+    .feature__content__item {
+        width: 300px;
+    }
+
+    .subscribe__content-left {
+        width: 300px;
+    }
+
+}
